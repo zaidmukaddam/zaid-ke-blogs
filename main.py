@@ -17,6 +17,7 @@ load_dotenv()
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('Secret_Key')
+
 OWN_EMAIL = os.getenv("Email")
 OWN_PASSWORD = os.getenv("Passwd")
 ckeditor = CKEditor(app)
